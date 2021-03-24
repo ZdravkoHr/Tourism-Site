@@ -32,7 +32,16 @@
 	<body>
 		<div id="mapid"></div>
 		<script>
-			var mymap = L.map('mapid').setView([42.1267995, 25.221695], 13);
+			var mymap = L.map('mapid', {
+				center: [42.09682436675544, 25.22108613744987],
+				zoom: 13,
+				minZoom: 11,
+				maxBounds: [
+					[42.01412342268658, 24.877063991022514],
+					[42.20646323912067, 25.350447068503453],
+				],
+				maxBoundsViscosity: 1,
+			});
 
 			L.tileLayer(
 				'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidG91cmlzbXNpdGUiLCJhIjoiY2ttbTNyd3JuMWg3MzJ2cW93MWp5N2xuYSJ9.k7uQipMe4wDz0MCgEddZtA',

@@ -1,9 +1,2 @@
-@use './partials/colors';
-
-:root {
-	@each $color, $hue in colors.$colors {
-		@each $name, $value in $hue {
-			--clr-#{$color}-#{$name}: #{$value};
-		}
-	}
-}
+@use './partials/custom-props';
+@use './partials/utilities';

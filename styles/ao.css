@@ -1,0 +1,19 @@
+/* Error: $color: var(--clr-others-green) is not a color.
+ *    ,
+ * 16 |     @if (lightness($value) > 50) {
+ *    |          ^^^^^^^^^^^^^^^^^
+ *    '
+ *   styles\functions\_functions.scss 16:7  get-contrast-color()
+ *   styles\partials\_utilities.scss 73:10  @use
+ *   styles\main.scss 2:1                   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $color: var(--clr-others-green) is not a color.\a    \2577 \a 16 \2502      @if (lightness($value) > 50) {\d\a    \2502           ^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\functions\\_functions.scss 16:7  get-contrast-color()\a   styles\\partials\\_utilities.scss 73:10  @use\a   styles\\main.scss 2:1                   root stylesheet";
+}

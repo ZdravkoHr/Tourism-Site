@@ -1,0 +1,21 @@
+@use 'sass:string';
+@use '../partials/custom-props';
+@use '../partials/colors';
+
+.asd {
+	color: var(--clr-others-green);
+}
+
+@function get-contrast-color($input-color) {
+	$value: $input-color;
+	@if (string.index($input-color, 'var') == null) {
+		$value: #{var(--#{$input-color})};
+	}
+	@debug $value;
+
+	@if (lightness($value) > 50) {
+		@return #000;
+	}
+
+	@return #fff;
+}

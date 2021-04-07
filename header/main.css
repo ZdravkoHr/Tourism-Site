@@ -14,7 +14,7 @@ header .grey-box {
   width: 20%;
   background: #1c1e1b;
 }
-header .grey-box h1 {
+header h1 {
   color: #f3f3f3;
   font-size: 54px;
   padding: 39% 80%;
@@ -26,12 +26,12 @@ header .header-img {
   width: 80%;
   background-position: center;
 }
-header .header-img h2 {
+header h2 {
   text-align: right;
   color: #f3f3f3;
   margin: 10px 20px 0px 0px;
 }
-header .header-img p {
+header p {
   font-size: 20px;
   color: #f3f3f3;
   display: flex;
@@ -46,31 +46,32 @@ nav {
   background: #242421;
   position: fixed;
   width: 100%;
-  height: 11vh;
   box-shadow: 0 -6px 10px -2px #1a1a1a;
 }
 nav .menu {
   display: flex;
   height: 100%;
 }
-nav p {
-  margin-top: 27px;
-  font-size: 23px;
-}
 nav li {
   list-style: none;
   color: #f3f3f4;
-  width: 18%;
+  flex: 1;
   text-align: center;
-  border-left: 1px solid #848484;
 }
 nav li:hover {
   background: #049c64;
   transition: 0.5s;
+  cursor: pointer;
 }
-nav li a {
+nav li + li {
+  border-left: 1px solid #848484;
+}
+nav a {
   text-decoration: none;
   color: #f3f3f4;
+  font-size: 23px;
+  padding: 22px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

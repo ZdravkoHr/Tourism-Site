@@ -79,12 +79,10 @@
 .flex {
 	&-sb {
 		justify-content: space-between;
-		align-items: space-between;
 	}
 
 	&-sa {
 		justify-content: space-around;
-		align-items: space-around;
 	}
 
 	&-c {
@@ -97,28 +95,12 @@
 		align-items: flex-end;
 	}
 
-	&-sbx {
-		justify-content: space-between;
-	}
-
-	&-sax {
-		justify-content: space-around;
-	}
-
 	&-cx {
 		justify-content: center;
 	}
 
 	&-ex {
 		justify-content: flex-end;
-	}
-
-	&-sby {
-		align-items: space-between;
-	}
-
-	&-say {
-		align-items: space-around;
 	}
 
 	&-cy {

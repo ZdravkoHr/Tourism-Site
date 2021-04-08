@@ -4,69 +4,66 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 50vh;
+.main-header {
+  height: 400px;
+  min-height: 50vh;
   width: 100%;
   display: flex;
 }
-header .grey-box {
-  height: 100%;
+.main-header .grey-box {
   width: 20%;
-  background: #1c1e1b;
+  background: var(--clr-dark-3);
 }
-header h1 {
+.main-header h1 {
   color: #f3f3f3;
-  font-size: 54px;
-  padding: 39% 80%;
+  font-size: var(--txt-lg);
+  left: -4rem;
   position: relative;
 }
-header .header-img {
+.main-header .header-img {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("images/Purvomay.jpg");
   height: 100%;
   width: 80%;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
-header h2 {
+.main-header .header-text {
+  flex: 1;
+}
+.main-header h2 {
   text-align: right;
-  color: #f3f3f3;
+  color: var(--clr-light-gray2);
   margin: 10px 20px 0px 0px;
 }
-header p {
+.main-header p {
   font-size: 20px;
-  color: #f3f3f3;
-  display: flex;
-  justify-content: flex-end;
+  color: var(--clr-light-gray2);
+  padding-right: 100px;
   text-align: center;
-  width: 100%;
-  margin: 6% 0% 0% -10%;
+  flex: 1;
 }
 
-nav {
-  color: white;
+.main-nav {
   background: #242421;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
   box-shadow: 0 -6px 10px -2px #1a1a1a;
 }
-nav .menu {
-  display: flex;
-  height: 100%;
-}
-nav li {
+.main-nav li {
   list-style: none;
-  color: #f3f3f4;
   flex: 1;
   text-align: center;
 }
-nav li:hover {
+.main-nav li:hover {
   background: #049c64;
   transition: 0.5s;
   cursor: pointer;
 }
-nav li + li {
+.main-nav li + li {
   border-left: 1px solid #848484;
 }
-nav a {
+.main-nav a {
   text-decoration: none;
   color: #f3f3f4;
   font-size: 23px;
@@ -74,4 +71,4 @@ nav a {
   display: inline-block;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=header.css.map */

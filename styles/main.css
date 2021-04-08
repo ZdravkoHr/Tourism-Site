@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://bg.allfont.net/allfont.css?fonts=book-antiqua");
+:root {
+  --clr-light-gray1: #f6f6f6;
+  --clr-light-gray2: #f3f3f3;
+  --clr-light-blue: #ace5ee;
+  --clr-dark-1: #2b2d28;
+  --clr-dark-2: #20221f;
+  --clr-dark-3: #1c1e1b;
+  --clr-dark-blue: #1c3738;
+  --clr-other-green: #009966;
+  --clr-other-red: #d30031;
+  --txt-lg: clamp(2rem, 4rem, 6vw);
+  --txt-md: clamp(1.8rem, 1.8rem + 10vw, 2.5rem);
+  --txt-nm: clamp(0.85rem, 0.85rem + 10vw, 1rem);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-x-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.m-y-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-x-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.p-y-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-x-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.m-y-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-x-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p-y-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-x-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.m-y-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-x-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.p-y-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.m-x-4 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.m-y-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-x-4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.p-y-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.m-x-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.m-y-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.p-x-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.p-y-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.m-6 {
+  margin: 6rem;
+}
+
+.m-x-6 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.m-y-6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.p-6 {
+  padding: 6rem;
+}
+
+.p-x-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.p-y-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.m-7 {
+  margin: 7rem;
+}
+
+.m-x-7 {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.m-y-7 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.p-7 {
+  padding: 7rem;
+}
+
+.p-x-7 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.p-y-7 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.ta-c {
+  text-align: center;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+
+.f-w-100 {
+  font-weight: 100;
+}
+.f-w-200 {
+  font-weight: 200;
+}
+.f-w-300 {
+  font-weight: 300;
+}
+.f-w-400 {
+  font-weight: 400;
+}
+.f-w-500 {
+  font-weight: 500;
+}
+.f-w-600 {
+  font-weight: 600;
+}
+.f-w-700 {
+  font-weight: 700;
+}
+.f-w-800 {
+  font-weight: 800;
+}
+
+[class^=btn] {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 3px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--clr-others-green);
+  color: #fff;
+}
+
+[class^=flex] {
+  display: flex;
+}
+
+.flex-sb {
+  justify-content: space-between;
+  align-items: space-between;
+}
+.flex-sa {
+  justify-content: space-around;
+  align-items: space-around;
+}
+.flex-c {
+  justify-content: center;
+  align-items: center;
+}
+.flex-e {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.flex-sbx {
+  justify-content: space-between;
+}
+.flex-sax {
+  justify-content: space-around;
+}
+.flex-cx {
+  justify-content: center;
+}
+.flex-ex {
+  justify-content: flex-end;
+}
+.flex-sby {
+  align-items: space-between;
+}
+.flex-say {
+  align-items: space-around;
+}
+.flex-cy {
+  align-items: center;
+}
+.flex-ey {
+  align-items: flex-end;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Book Antiqua", arial;
+}
+
+/*# sourceMappingURL=main.css.map */
